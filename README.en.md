@@ -39,7 +39,7 @@ Deep source-level analysis was performed on these 4 open-source AI agent bot pro
 </td>
 <td align="center" valign="top" width="25%">
 <p><a href="https://github.com/HKUDS/nanobot"><img src="https://raw.githubusercontent.com/HKUDS/nanobot/main/nanobot_logo.png" height="64" alt="nanobot" /></a></p>
-<p><a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/badge/🐈_nanobot-Python-3776AB?style=flat-square" height="22" alt="nanobot" /></a></p>
+<p><a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/badge/🐱_nanobot-Python-3776AB?style=flat-square" height="22" alt="nanobot" /></a></p>
 <p><sub>Ultra-Lightweight AI Assistant</sub></p>
 <p><a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/github/stars/HKUDS/nanobot?style=social" /></a></p>
 <p><sub>~4,000 Lines · Minimalist</sub></p>
