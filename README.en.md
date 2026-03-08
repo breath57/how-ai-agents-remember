@@ -8,7 +8,7 @@
 <h1 align="center">🧠 How AI Agents Remember</h1>
 
 <p align="center">
-  <b>We reverse-engineered 4 open-source AI agent frameworks so you don't have to.</b><br/>
+  <b>Reverse-engineered 4 open-source AI agent frameworks so you don't have to.</b><br/>
   Deep technical breakdowns of how nanobot, NullClaw, OpenClaw, and OpenFang implement persistent memory — architecture diagrams, data models, source-level analysis, and replication guides.
 </p>
 
@@ -26,7 +26,7 @@
 
 ## Featured Projects
 
-We performed deep source-level analysis on these 4 open-source AI agent frameworks:
+Deep source-level analysis was performed on these 4 open-source AI agent frameworks:
 
 <table>
 <tr>
@@ -73,7 +73,7 @@ We performed deep source-level analysis on these 4 open-source AI agent framewor
 </tr>
 </table>
 
-> This is not another "AI Agent survey". We read every line of memory-related code in these 4 projects, traced every data flow, and documented every design tradeoff.
+> This is not another "AI Agent survey". Every line of memory-related code in these 4 projects was read, every data flow traced, and every design tradeoff documented.
 
 ---
 
@@ -81,7 +81,7 @@ We performed deep source-level analysis on these 4 open-source AI agent framewor
 
 Every AI agent framework claims to have "memory". Few explain how it actually works.
 
-We spent weeks reading source code — Python, TypeScript, Zig, Rust — tracing every code path from "user sends a message" to "agent remembers it next week". Then we wrote it all down: the architecture, the data models, the retrieval pipelines, the edge cases, and the design tradeoffs.
+Weeks were spent reading source code — Python, TypeScript, Zig, Rust — tracing every code path from "user sends a message" to "agent remembers it next week". Then it was all written down: the architecture, the data models, the retrieval pipelines, the edge cases, and the design tradeoffs.
 
 **This repo is the missing manual for AI agent memory.**
 
@@ -90,7 +90,6 @@ Whether you're building your own agent framework, evaluating existing ones, or j
 ## What You Get
 
 ```
-docs/tech/mem/
 ├── nanobot/           # 7 docs  — Python, two-layer memory, LLM-driven consolidation
 ├── nullclaw/          # 9 docs  — Zig, four-layer architecture, 10 storage backends
 ├── openclaw/          # 10 docs — TypeScript, plugin system, hybrid search
@@ -281,7 +280,7 @@ cd agent-memory-anatomy
 | Compare all approaches | [This page ↑](#comparison) |
 | Replicate in LangGraph / Python | Any `replication-guide.md` |
 
-## What We Learned
+## Lessons from Reverse Engineering
 
 After reading thousands of lines of agent memory code across 4 languages, here are the universal patterns:
 
@@ -293,7 +292,7 @@ After reading thousands of lines of agent memory code across 4 languages, here a
 
 4. **Graceful degradation is non-negotiable** — Embeddings fail. Databases corrupt. Every production system needs a fallback path (openclaw's dual-engine, nullclaw's circuit breaker).
 
-5. **Memory decay matters more than you think** — Without decay, old irrelevant memories crowd out new important ones. openfang's confidence-based decay is the most sophisticated approach we found.
+5. **Memory decay matters more than you think** — Without decay, old irrelevant memories crowd out new important ones. openfang's confidence-based decay is the most sophisticated approach found.
 
 ## Acknowledgments
 
