@@ -100,10 +100,10 @@
 
 ```mermaid
 graph LR
-    A["📝 MEMORY.md\n长期事实"] -->|"注入\nsystem prompt"| LLM["🤖 LLM"]
-    B["📜 HISTORY.md\n事件日志"] -->|"Agent 按需\ngrep 搜索"| LLM
-    C["💬 sessions/*.jsonl\n滑动窗口"] -->|"近期上下文"| LLM
-    LLM -->|"save_memory()\ntool call"| D["🔄 记忆整合"]
+    A["`📝 MEMORY.md<br/>长期事实`"] -->|"`注入<br/>system prompt`"| LLM["🤖 LLM"]
+    B["`📜 HISTORY.md<br/>事件日志`"] -->|"`Agent 按需<br/>grep 搜索`"| LLM
+    C["`💬 sessions/*.jsonl<br/>滑动窗口`"] -->|"近期上下文"| LLM
+    LLM -->|"`save_memory()<br/>tool call`"| D["🔄 记忆整合"]
     D --> A
     D --> B
 ```
@@ -130,23 +130,23 @@ graph TB
         Summarizer["LLM 摘要"]
     end
     subgraph "Layer B — 检索引擎"
-        QE["查询扩展"] --> RRF["倒数排名\n融合 (RRF)"]
+        QE["查询扩展"] --> RRF["`倒数排名<br/>融合 (RRF)`"]
         RRF --> TD["时间衰减"]
         TD --> MMR["MMR 重排"]
         MMR --> LR["LLM 重排"]
     end
     subgraph "Layer C — 向量平面"
-        Embed["Embedding\n路由"]
+        Embed["`Embedding<br/>路由`"]
         VS["向量存储"]
         CB["熔断器"]
         Outbox["同步队列"]
     end
     subgraph "Layer A — 存储层"
-        SQLite["SQLite\n+ FTS5"]
+        SQLite["`SQLite<br/>+ FTS5`"]
         PG["Postgres"]
         Redis["Redis"]
         Lance["LanceDB"]
-        API["HTTP\nAPI"]
+        API["`HTTP<br/>API`"]
         More["另外 5 种..."]
     end
 
@@ -172,17 +172,17 @@ graph TB
 
 ```mermaid
 graph TB
-    Agent["🤖 Agent"] --> Tools["记忆工具\n(remember / recall / search)"]
-    Tools --> Router["Search Manager\n路由器"]
-    Router --> QMD["QMD 外挂引擎\n(主力)"]
-    Router --> |"降级"| SQLite["内置 SQLite\n+ FTS5 + sqlite-vec"]
+    Agent["🤖 Agent"] --> Tools["`记忆工具<br/>(remember / recall / search)`"]
+    Tools --> Router["`Search Manager<br/>路由器`"]
+    Router --> QMD["`QMD 外挂引擎<br/>(主力)`"]
+    Router --> |"降级"| SQLite["`内置 SQLite<br/>+ FTS5 + sqlite-vec`"]
     QMD -.-> |"失败"| SQLite
-    Router --> Embed["Embedding 路由\n6 种提供者"]
+    Router --> Embed["`Embedding 路由<br/>6 种提供者`"]
     Embed --> OpenAI["OpenAI"]
     Embed --> Gemini["Gemini"]
-    Embed --> Ollama["Ollama\n(本地)"]
+    Embed --> Ollama["`Ollama<br/>(本地)`"]
     Embed --> More["另外 3 种..."]
-    SQLite --> Files["📁 Markdown 文件\n(唯一真相源)"]
+    SQLite --> Files["`📁 Markdown 文件<br/>(唯一真相源)`"]
 ```
 
 Markdown 文件是唯一真相源 —— 数据库只是索引。双引擎架构优先走 QMD 外挂进程，失败自动降级到内置 SQLite。6 种 Embedding 提供者自动选择、优雅降级。记忆是插件，不是铁板一块。
@@ -199,15 +199,15 @@ Markdown 文件是唯一真相源 —— 数据库只是索引。双引擎架构
 
 ```mermaid
 graph TB
-    Agent["🤖 Agent OS"] --> Facade["MemorySubstrate\n统一门面"]
-    Facade --> KV["StructuredStore\nKey-Value"]
-    Facade --> Sem["SemanticStore\n向量搜索"]
-    Facade --> KG["KnowledgeStore\n知识图谱"]
-    Facade --> Sess["SessionStore\n跨通道会话"]
-    Facade --> Cons["ConsolidationEngine\n衰减与合并"]
-    Facade --> Usage["UsageStore\n遥测数据"]
+    Agent["🤖 Agent OS"] --> Facade["`MemorySubstrate<br/>统一门面`"]
+    Facade --> KV["`StructuredStore<br/>Key-Value`"]
+    Facade --> Sem["`SemanticStore<br/>向量搜索`"]
+    Facade --> KG["`KnowledgeStore<br/>知识图谱`"]
+    Facade --> Sess["`SessionStore<br/>跨通道会话`"]
+    Facade --> Cons["`ConsolidationEngine<br/>衰减与合并`"]
+    Facade --> Usage["`UsageStore<br/>遥测数据`"]
 
-    KV --> DB["🗄️ 单一 SQLite\n(WAL 模式)"]
+    KV --> DB["`🗄️ 单一 SQLite<br/>(WAL 模式)`"]
     Sem --> DB
     KG --> DB
     Sess --> DB

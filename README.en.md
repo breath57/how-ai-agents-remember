@@ -102,10 +102,10 @@ Each project analysis includes:
 
 ```mermaid
 graph LR
-    A["📝 MEMORY.md\nLong-term facts"] -->|inject into\nsystem prompt| LLM["🤖 LLM"]
-    B["📜 HISTORY.md\nEvent log"] -->|agent greps\non demand| LLM
-    C["💬 sessions/*.jsonl\nSliding window"] -->|recent context| LLM
-    LLM -->|"save_memory()\ntool call"| D["🔄 Consolidation"]
+    A["`📝 MEMORY.md<br/>Long-term facts`"] -->|"`inject into<br/>system prompt`"| LLM["🤖 LLM"]
+    B["`📜 HISTORY.md<br/>Event log`"] -->|"`agent greps<br/>on demand`"| LLM
+    C["`💬 sessions/*.jsonl<br/>Sliding window`"] -->|recent context| LLM
+    LLM -->|"`save_memory()<br/>tool call`"| D["🔄 Consolidation"]
     D --> A
     D --> B
 ```
@@ -125,30 +125,30 @@ Two Markdown files. That's it. `MEMORY.md` holds facts (injected into every prom
 ```mermaid
 graph TB
     subgraph "Layer D — Orchestrator"
-        Cache["Response\nCache"]
-        SemCache["Semantic\nCache"]
-        Hygiene["Cleanup\nJobs"]
-        Snapshot["JSON\nSnapshot"]
-        Summarizer["LLM\nSummarizer"]
+        Cache["`Response<br/>Cache`"]
+        SemCache["`Semantic<br/>Cache`"]
+        Hygiene["`Cleanup<br/>Jobs`"]
+        Snapshot["`JSON<br/>Snapshot`"]
+        Summarizer["`LLM<br/>Summarizer`"]
     end
     subgraph "Layer B — Retrieval Engine"
-        QE["Query\nExpansion"] --> RRF["Reciprocal\nRank Fusion"]
-        RRF --> TD["Temporal\nDecay"]
-        TD --> MMR["MMR\nRerank"]
-        MMR --> LR["LLM\nRerank"]
+        QE["`Query<br/>Expansion`"] --> RRF["`Reciprocal<br/>Rank Fusion`"]
+        RRF --> TD["`Temporal<br/>Decay`"]
+        TD --> MMR["`MMR<br/>Rerank`"]
+        MMR --> LR["`LLM<br/>Rerank`"]
     end
     subgraph "Layer C — Vector Plane"
-        Embed["Embedding\nRouter"]
-        VS["Vector\nStore"]
-        CB["Circuit\nBreaker"]
-        Outbox["Sync\nOutbox"]
+        Embed["`Embedding<br/>Router`"]
+        VS["`Vector<br/>Store`"]
+        CB["`Circuit<br/>Breaker`"]
+        Outbox["`Sync<br/>Outbox`"]
     end
     subgraph "Layer A — Storage"
-        SQLite["SQLite\n+ FTS5"]
+        SQLite["`SQLite<br/>+ FTS5`"]
         PG["Postgres"]
         Redis["Redis"]
         Lance["LanceDB"]
-        API["HTTP\nAPI"]
+        API["`HTTP<br/>API`"]
         More["5 more..."]
     end
 
@@ -174,17 +174,17 @@ graph TB
 
 ```mermaid
 graph TB
-    Agent["🤖 Agent"] --> Tools["Memory Tools\n(remember / recall / search)"]
-    Tools --> Router["Search Manager\nRouter"]
-    Router --> QMD["QMD Sidecar\n(primary)"]
-    Router --> |"fallback"| SQLite["Built-in SQLite\n+ FTS5 + sqlite-vec"]
+    Agent["🤖 Agent"] --> Tools["`Memory Tools<br/>(remember / recall / search)`"]
+    Tools --> Router["`Search Manager<br/>Router`"]
+    Router --> QMD["`QMD Sidecar<br/>(primary)`"]
+    Router --> |"fallback"| SQLite["`Built-in SQLite<br/>+ FTS5 + sqlite-vec`"]
     QMD -.-> |"fail"| SQLite
-    Router --> Embed["Embedding Router\n6 providers"]
+    Router --> Embed["`Embedding Router<br/>6 providers`"]
     Embed --> OpenAI["OpenAI"]
     Embed --> Gemini["Gemini"]
-    Embed --> Ollama["Ollama\n(local)"]
+    Embed --> Ollama["`Ollama<br/>(local)`"]
     Embed --> More["3 more..."]
-    SQLite --> Files["📁 Markdown Files\n(source of truth)"]
+    SQLite --> Files["`📁 Markdown Files<br/>(source of truth)`"]
 ```
 
 Markdown files are the source of truth — databases are just indexes. A dual-engine architecture routes through an external QMD sidecar first, then falls back to built-in SQLite. Six embedding providers with automatic selection and graceful degradation. Memory is a plugin, not a monolith.
@@ -201,15 +201,15 @@ Markdown files are the source of truth — databases are just indexes. A dual-en
 
 ```mermaid
 graph TB
-    Agent["🤖 Agent OS"] --> Facade["MemorySubstrate\n(Unified Facade)"]
-    Facade --> KV["StructuredStore\nKey-Value"]
-    Facade --> Sem["SemanticStore\nVector Search"]
-    Facade --> KG["KnowledgeStore\nGraph Triples"]
-    Facade --> Sess["SessionStore\nCross-Channel"]
-    Facade --> Cons["ConsolidationEngine\nDecay & Merge"]
-    Facade --> Usage["UsageStore\nTelemetry"]
+    Agent["🤖 Agent OS"] --> Facade["`MemorySubstrate<br/>(Unified Facade)`"]
+    Facade --> KV["`StructuredStore<br/>Key-Value`"]
+    Facade --> Sem["`SemanticStore<br/>Vector Search`"]
+    Facade --> KG["`KnowledgeStore<br/>Graph Triples`"]
+    Facade --> Sess["`SessionStore<br/>Cross-Channel`"]
+    Facade --> Cons["`ConsolidationEngine<br/>Decay & Merge`"]
+    Facade --> Usage["`UsageStore<br/>Telemetry`"]
 
-    KV --> DB["🗄️ Single SQLite\n(WAL mode)"]
+    KV --> DB["`🗄️ Single SQLite<br/>(WAL mode)`"]
     Sem --> DB
     KG --> DB
     Sess --> DB
