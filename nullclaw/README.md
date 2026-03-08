@@ -1,6 +1,6 @@
 # Nullclaw 记忆系统逆向工程文档
 
-> 本文档通过逆向工程 nullclaw（Zig 实现的 AI Agent 框架）的 `src/memory/` 模块，
+> 本文档通过逆向工程 nullclaw（Zig 实现的 AI Agent 基础设施）的 `src/memory/` 模块，
 > 完整拆解其记忆能力的架构设计、数据模型、检索管线、生命周期管理等核心实现，
 > 以便后续在 Python/LangGraph 技术栈上完全复刻。
 

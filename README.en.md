@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/AI_Agent-Memory_Systems-blueviolet?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/Reverse_Engineered-4_Frameworks-ff6b6b?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Reverse_Engineered-4_Bot_Projects-ff6b6b?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Docs-30%2B_Files-success?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Diagrams-Mermaid-blue?style=for-the-badge&logo=mermaid" />
 </p>
@@ -8,7 +8,7 @@
 <h1 align="center">🧠 How AI Agents Remember</h1>
 
 <p align="center">
-  <b>Reverse-engineered 4 open-source AI agent frameworks so you don't have to.</b><br/>
+  <b>Reverse-engineered 4 open-source AI agent bot projects so you don't have to.</b><br/>
   Deep technical breakdowns of how nanobot, NullClaw, OpenClaw, and OpenFang implement persistent memory — architecture diagrams, data models, source-level analysis, and replication guides.
 </p>
 
@@ -26,7 +26,7 @@
 
 ## Featured Projects
 
-Deep source-level analysis was performed on these 4 open-source AI agent frameworks:
+Deep source-level analysis was performed on these 4 open-source AI agent bot projects:
 
 <table>
 <tr>
@@ -42,17 +42,17 @@ Deep source-level analysis was performed on these 4 open-source AI agent framewo
 </td>
 <td align="center" width="25%">
 <a href="https://github.com/HKUDS/nanobot">
-<img src="https://img.shields.io/pypi/v/nanobot-ai?style=flat-square&label=nanobot-ai&color=blue" height="28" />
+<img src="https://raw.githubusercontent.com/HKUDS/nanobot/main/nanobot_logo.png" width="80" alt="nanobot" />
 </a>
 <br/>
-<b>🐈 nanobot</b><br/>
+<b>🐱 nanobot</b><br/>
 <sub>Ultra-Lightweight AI Assistant</sub><br/>
 <a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/github/stars/HKUDS/nanobot?style=social" /></a><br/>
 <sub>Python · ~4,000 Lines · Minimalist</sub>
 </td>
 <td align="center" width="25%">
 <a href="https://github.com/nullclaw/nullclaw">
-<img src="https://img.shields.io/badge/NullClaw-678KB_Binary-orange?style=flat-square&logo=zig&logoColor=white" height="28" />
+<img src="https://raw.githubusercontent.com/nullclaw/nullclaw/main/nullclaw.png" width="80" alt="NullClaw" />
 </a>
 <br/>
 <b>⚡ NullClaw</b><br/>
@@ -62,10 +62,10 @@ Deep source-level analysis was performed on these 4 open-source AI agent framewo
 </td>
 <td align="center" width="25%">
 <a href="https://github.com/RightNow-AI/openfang">
-<img src="https://img.shields.io/badge/OpenFang-Agent_OS-green?style=flat-square&logo=rust&logoColor=white" height="28" />
+<img src="https://raw.githubusercontent.com/RightNow-AI/openfang/main/public/assets/openfang-logo.png" width="80" alt="OpenFang" />
 </a>
 <br/>
-<b>🦀 OpenFang</b><br/>
+<b>🐍 OpenFang</b><br/>
 <sub>The Agent Operating System</sub><br/>
 <a href="https://github.com/RightNow-AI/openfang"><img src="https://img.shields.io/github/stars/RightNow-AI/openfang?style=social" /></a><br/>
 <sub>Rust · 137K LOC · Knowledge Graph</sub>
@@ -79,7 +79,7 @@ Deep source-level analysis was performed on these 4 open-source AI agent framewo
 
 ## Why This Exists
 
-Every AI agent framework claims to have "memory". Few explain how it actually works.
+Every AI agent product claims to have "memory". Few explain how it actually works.
 
 Weeks were spent reading source code — Python, TypeScript, Zig, Rust — tracing every code path from "user sends a message" to "agent remembers it next week". Then it was all written down: the architecture, the data models, the retrieval pipelines, the edge cases, and the design tradeoffs.
 
@@ -96,7 +96,7 @@ Whether you're building your own agent framework, evaluating existing ones, or j
 └── openfang/          # 10 docs — Rust, unified SQLite substrate, knowledge graph
 ```
 
-Each framework analysis includes:
+Each project analysis includes:
 
 - **Architecture Overview** — Layer diagrams, component relationships, data flow
 - **Data Model** — Schemas, type definitions, storage formats
@@ -108,7 +108,7 @@ Each framework analysis includes:
 
 ## The 4 Systems
 
-### <a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/badge/🐈_nanobot-PyPI-blue?style=flat-square" height="20" /></a> &nbsp; The Elegant Minimalist
+### <a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/badge/🐱_nanobot-PyPI-blue?style=flat-square" height="20" /></a> &nbsp; The Elegant Minimalist
 
 > **Language:** Python &nbsp;|&nbsp; **~4,000 Lines** &nbsp;|&nbsp; **Philosophy:** *Markdown is memory*
 
@@ -207,7 +207,7 @@ Markdown files are the source of truth — databases are just indexes. A dual-en
 
 ---
 
-### <a href="https://github.com/RightNow-AI/openfang"><img src="https://img.shields.io/badge/🦀_OpenFang-Rust-orange?style=flat-square" height="20" /></a> &nbsp; The Rust Substrate
+### <a href="https://github.com/RightNow-AI/openfang"><img src="https://img.shields.io/badge/🐍_OpenFang-Rust-orange?style=flat-square" height="20" /></a> &nbsp; The Rust Substrate
 
 > **Language:** Rust &nbsp;|&nbsp; **137K LOC** &nbsp;|&nbsp; **1,767+ Tests** &nbsp;|&nbsp; **Philosophy:** *One database to rule them all*
 
@@ -239,7 +239,7 @@ Six logical sub-stores — KV, semantic search, knowledge graph, cross-channel s
 
 ## Comparison
 
-| | <a href="https://github.com/HKUDS/nanobot">🐈 nanobot</a> | <a href="https://github.com/nullclaw/nullclaw">⚡ NullClaw</a> | <a href="https://github.com/openclaw/openclaw">🦞 OpenClaw</a> | <a href="https://github.com/RightNow-AI/openfang">🦀 OpenFang</a> |
+| | <a href="https://github.com/HKUDS/nanobot">🐱 nanobot</a> | <a href="https://github.com/nullclaw/nullclaw">⚡ NullClaw</a> | <a href="https://github.com/openclaw/openclaw">🦞 OpenClaw</a> | <a href="https://github.com/RightNow-AI/openfang">🐍 OpenFang</a> |
 |---|---|---|---|---|
 | **Language** | Python | Zig | TypeScript | Rust |
 | **Storage** | Markdown files | 10 backends (SQLite, PG, Redis...) | SQLite + LanceDB + Markdown | Single SQLite |
@@ -256,7 +256,7 @@ Six logical sub-stores — KV, semantic search, knowledge graph, cross-channel s
 ```mermaid
 graph LR
     A["🎯 Simple\n\nnanobot\n2 Markdown files\nLLM-as-curator"] ---|increasing complexity| B["🔌 Modular\n\nopenclaw\nPlugin architecture\nGraceful fallback"]
-    B ---|increasing complexity| C["🦀 Unified\n\nopenfang\n6 sub-stores\nKnowledge graph"]
+    B ---|increasing complexity| C["🐍 Unified\n\nopenfang\n6 sub-stores\nKnowledge graph"]
     C ---|increasing complexity| D["🏭 Enterprise\n\nnullclaw\n10 backends\n9-stage pipeline"]
 ```
 
@@ -299,17 +299,17 @@ After reading thousands of lines of agent memory code across 4 languages, here a
 Thanks to these open-source projects and communities whose excellent engineering made this analysis possible:
 
 - [🦞 **OpenClaw**](https://github.com/openclaw/openclaw) — The most feature-complete personal AI assistant, 22+ channels · [Website](https://openclaw.ai) · [Docs](https://docs.openclaw.ai)
-- [🐈 **nanobot**](https://github.com/HKUDS/nanobot) — OpenClaw-inspired minimalist AI assistant, ~4,000 lines · [PyPI](https://pypi.org/project/nanobot-ai/)
+- [🐱 **nanobot**](https://github.com/HKUDS/nanobot) — OpenClaw-inspired minimalist AI assistant, ~4,000 lines · [PyPI](https://pypi.org/project/nanobot-ai/)
 - [⚡ **NullClaw**](https://github.com/nullclaw/nullclaw) — 678KB Zig static binary, <2ms cold start · [Website](https://nullclaw.io) · [Docs](https://nullclaw.github.io)
-- [🦀 **OpenFang**](https://github.com/RightNow-AI/openfang) — Rust Agent OS, 137K LOC · [Website](https://openfang.sh) · [Docs](https://openfang.sh/docs)
+- [🐍 **OpenFang**](https://github.com/RightNow-AI/openfang) — Rust Agent OS, 137K LOC · [Website](https://openfang.sh) · [Docs](https://openfang.sh/docs)
 
 > **Disclaimer:** This documentation is based on technical analysis of publicly available source code, for learning and research purposes only. All code copyrights belong to their respective project owners.
 
 ## Contributing
 
-Found an error? Want to add analysis of another framework? PRs welcome!
+Found an error? Want to add analysis of another project? PRs welcome!
 
-- **Add a framework:** Create `{framework-name}/` with at minimum `README.md` and architecture docs
+- **Add a project:** Create `{project-name}/` with at minimum `README.md` and architecture docs
 - **Fix an error:** Open a PR with the correction and a link to the relevant source code
 - **Improve diagrams:** All diagrams use Mermaid — edit the markdown directly
 
