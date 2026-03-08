@@ -30,45 +30,33 @@
 
 <table>
 <tr>
-<td align="center" width="25%">
-<a href="https://github.com/openclaw/openclaw">
-<img src="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/openclaw-logo-text-dark.png" width="180" alt="OpenClaw" />
-</a>
-<br/>
-<b>🦞 OpenClaw</b><br/>
-<sub>Personal AI Assistant</sub><br/>
-<a href="https://github.com/openclaw/openclaw"><img src="https://img.shields.io/github/stars/openclaw/openclaw?style=social" /></a><br/>
-<sub>TypeScript · 22+ 渠道 · 插件架构</sub>
+<td align="center" valign="top" width="25%">
+<p><a href="https://github.com/openclaw/openclaw"><img src="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/openclaw-logo-text-dark.png" height="64" alt="OpenClaw" /></a></p>
+<p><a href="https://github.com/openclaw/openclaw"><img src="https://img.shields.io/badge/🦞_OpenClaw-TypeScript-3178C6?style=flat-square" height="22" alt="OpenClaw" /></a></p>
+<p><sub>Personal AI Assistant</sub></p>
+<p><a href="https://github.com/openclaw/openclaw"><img src="https://img.shields.io/github/stars/openclaw/openclaw?style=social" /></a></p>
+<p><sub>22+ 渠道 · 插件架构</sub></p>
 </td>
-<td align="center" width="25%">
-<a href="https://github.com/HKUDS/nanobot">
-<img src="https://raw.githubusercontent.com/HKUDS/nanobot/main/nanobot_logo.png" width="80" alt="nanobot" />
-</a>
-<br/>
-<b>🐱 nanobot</b><br/>
-<sub>Ultra-Lightweight AI Assistant</sub><br/>
-<a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/github/stars/HKUDS/nanobot?style=social" /></a><br/>
-<sub>Python · ~4,000 行 · 极简主义</sub>
+<td align="center" valign="top" width="25%">
+<p><a href="https://github.com/HKUDS/nanobot"><img src="https://raw.githubusercontent.com/HKUDS/nanobot/main/nanobot_logo.png" height="64" alt="nanobot" /></a></p>
+<p><a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/badge/🐈_nanobot-Python-3776AB?style=flat-square" height="22" alt="nanobot" /></a></p>
+<p><sub>Ultra-Lightweight AI Assistant</sub></p>
+<p><a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/github/stars/HKUDS/nanobot?style=social" /></a></p>
+<p><sub>~4,000 行 · 极简主义</sub></p>
 </td>
-<td align="center" width="25%">
-<a href="https://github.com/nullclaw/nullclaw">
-<img src="https://raw.githubusercontent.com/nullclaw/nullclaw/main/nullclaw.png" width="80" alt="NullClaw" />
-</a>
-<br/>
-<b>⚡ NullClaw</b><br/>
-<sub>678KB · &lt;2ms Startup</sub><br/>
-<a href="https://github.com/nullclaw/nullclaw"><img src="https://img.shields.io/github/stars/nullclaw/nullclaw?style=social" /></a><br/>
-<sub>Zig · 3,230+ 测试 · 10 存储后端</sub>
+<td align="center" valign="top" width="25%">
+<p><a href="https://github.com/nullclaw/nullclaw"><span style="display:inline-block;background:#f5f5f5;padding:12px;border-radius:12px;"><img src="https://raw.githubusercontent.com/nullclaw/nullclaw/main/nullclaw.png" height="64" alt="NullClaw" /></span></a></p>
+<p><a href="https://github.com/nullclaw/nullclaw"><img src="https://img.shields.io/badge/⚡_NullClaw-Zig-F7A41D?style=flat-square" height="22" alt="NullClaw" /></a></p>
+<p><sub>678KB · &lt;2ms Startup</sub></p>
+<p><a href="https://github.com/nullclaw/nullclaw"><img src="https://img.shields.io/github/stars/nullclaw/nullclaw?style=social" /></a></p>
+<p><sub>3,230+ 测试 · 10 存储后端</sub></p>
 </td>
-<td align="center" width="25%">
-<a href="https://github.com/RightNow-AI/openfang">
-<img src="https://raw.githubusercontent.com/RightNow-AI/openfang/main/public/assets/openfang-logo.png" width="80" alt="OpenFang" />
-</a>
-<br/>
-<b>🐍 OpenFang</b><br/>
-<sub>The Agent Operating System</sub><br/>
-<a href="https://github.com/RightNow-AI/openfang"><img src="https://img.shields.io/github/stars/RightNow-AI/openfang?style=social" /></a><br/>
-<sub>Rust · 137K LOC · 知识图谱</sub>
+<td align="center" valign="top" width="25%">
+<p><a href="https://github.com/RightNow-AI/openfang"><span style="display:inline-block;background:#1a1a2e;padding:12px;border-radius:12px;"><img src="https://raw.githubusercontent.com/RightNow-AI/openfang/main/public/assets/openfang-logo.png" height="64" alt="OpenFang" /></span></a></p>
+<p><a href="https://github.com/RightNow-AI/openfang"><img src="https://img.shields.io/badge/🐍_OpenFang-Rust-orange?style=flat-square" height="22" alt="OpenFang" /></a></p>
+<p><sub>The Agent Operating System</sub></p>
+<p><a href="https://github.com/RightNow-AI/openfang"><img src="https://img.shields.io/github/stars/RightNow-AI/openfang?style=social" /></a></p>
+<p><sub>137K LOC · 知识图谱</sub></p>
 </td>
 </tr>
 </table>
@@ -253,9 +241,9 @@ graph TB
 
 ```mermaid
 graph LR
-    A["🎯 极简\n\n� nanobot\n2 个 Markdown 文件\nLLM 自己管记忆"] ---|复杂度递增| B["🔌 模块化\n\n🦞 OpenClaw\n插件架构\n优雅降级"]
-    B ---|复杂度递增| C["🐍 统一底座\n\n🐍 OpenFang\n6 个子存储\n知识图谱"]
-    C ---|复杂度递增| D["🏭 企业级\n\n⚡ NullClaw\n10 种后端\n9 阶段管线"]
+    A["`🎯 极简<br/><br/>🐈 nanobot<br/>2 个 Markdown 文件<br/>LLM 自己管记忆`"] ---|复杂度递增| B["`🔌 模块化<br/><br/>🦞 OpenClaw<br/>插件架构<br/>优雅降级`"]
+    B ---|复杂度递增| C["`🐍 统一底座<br/><br/>🐍 OpenFang<br/>6 个子存储<br/>知识图谱`"]
+    C ---|复杂度递增| D["`🏭 企业级<br/><br/>⚡ NullClaw<br/>10 种后端<br/>9 阶段管线`"]
 ```
 
 ---

@@ -30,45 +30,33 @@ Deep source-level analysis was performed on these 4 open-source AI agent bot pro
 
 <table>
 <tr>
-<td align="center" width="25%">
-<a href="https://github.com/openclaw/openclaw">
-<img src="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/openclaw-logo-text-dark.png" width="180" alt="OpenClaw" />
-</a>
-<br/>
-<b>🦞 OpenClaw</b><br/>
-<sub>Personal AI Assistant</sub><br/>
-<a href="https://github.com/openclaw/openclaw"><img src="https://img.shields.io/github/stars/openclaw/openclaw?style=social" /></a><br/>
-<sub>TypeScript · 22+ Channels · Plugin Architecture</sub>
+<td align="center" valign="top" width="25%">
+<p><a href="https://github.com/openclaw/openclaw"><img src="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/openclaw-logo-text-dark.png" height="64" alt="OpenClaw" /></a></p>
+<p><a href="https://github.com/openclaw/openclaw"><img src="https://img.shields.io/badge/🦞_OpenClaw-TypeScript-3178C6?style=flat-square" height="22" alt="OpenClaw" /></a></p>
+<p><sub>Personal AI Assistant</sub></p>
+<p><a href="https://github.com/openclaw/openclaw"><img src="https://img.shields.io/github/stars/openclaw/openclaw?style=social" /></a></p>
+<p><sub>22+ Channels · Plugin Architecture</sub></p>
 </td>
-<td align="center" width="25%">
-<a href="https://github.com/HKUDS/nanobot">
-<img src="https://raw.githubusercontent.com/HKUDS/nanobot/main/nanobot_logo.png" width="80" alt="nanobot" />
-</a>
-<br/>
-<b>🐱 nanobot</b><br/>
-<sub>Ultra-Lightweight AI Assistant</sub><br/>
-<a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/github/stars/HKUDS/nanobot?style=social" /></a><br/>
-<sub>Python · ~4,000 Lines · Minimalist</sub>
+<td align="center" valign="top" width="25%">
+<p><a href="https://github.com/HKUDS/nanobot"><img src="https://raw.githubusercontent.com/HKUDS/nanobot/main/nanobot_logo.png" height="64" alt="nanobot" /></a></p>
+<p><a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/badge/🐈_nanobot-Python-3776AB?style=flat-square" height="22" alt="nanobot" /></a></p>
+<p><sub>Ultra-Lightweight AI Assistant</sub></p>
+<p><a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/github/stars/HKUDS/nanobot?style=social" /></a></p>
+<p><sub>~4,000 Lines · Minimalist</sub></p>
 </td>
-<td align="center" width="25%">
-<a href="https://github.com/nullclaw/nullclaw">
-<img src="https://raw.githubusercontent.com/nullclaw/nullclaw/main/nullclaw.png" width="80" alt="NullClaw" />
-</a>
-<br/>
-<b>⚡ NullClaw</b><br/>
-<sub>678KB · &lt;2ms Startup</sub><br/>
-<a href="https://github.com/nullclaw/nullclaw"><img src="https://img.shields.io/github/stars/nullclaw/nullclaw?style=social" /></a><br/>
-<sub>Zig · 3,230+ Tests · 10 Storage Backends</sub>
+<td align="center" valign="top" width="25%">
+<p><a href="https://github.com/nullclaw/nullclaw"><span style="display:inline-block;background:#f5f5f5;padding:12px;border-radius:12px;"><img src="https://raw.githubusercontent.com/nullclaw/nullclaw/main/nullclaw.png" height="64" alt="NullClaw" /></span></a></p>
+<p><a href="https://github.com/nullclaw/nullclaw"><img src="https://img.shields.io/badge/⚡_NullClaw-Zig-F7A41D?style=flat-square" height="22" alt="NullClaw" /></a></p>
+<p><sub>678KB · &lt;2ms Startup</sub></p>
+<p><a href="https://github.com/nullclaw/nullclaw"><img src="https://img.shields.io/github/stars/nullclaw/nullclaw?style=social" /></a></p>
+<p><sub>3,230+ Tests · 10 Storage Backends</sub></p>
 </td>
-<td align="center" width="25%">
-<a href="https://github.com/RightNow-AI/openfang">
-<img src="https://raw.githubusercontent.com/RightNow-AI/openfang/main/public/assets/openfang-logo.png" width="80" alt="OpenFang" />
-</a>
-<br/>
-<b>🐍 OpenFang</b><br/>
-<sub>The Agent Operating System</sub><br/>
-<a href="https://github.com/RightNow-AI/openfang"><img src="https://img.shields.io/github/stars/RightNow-AI/openfang?style=social" /></a><br/>
-<sub>Rust · 137K LOC · Knowledge Graph</sub>
+<td align="center" valign="top" width="25%">
+<p><a href="https://github.com/RightNow-AI/openfang"><span style="display:inline-block;background:#1a1a2e;padding:12px;border-radius:12px;"><img src="https://raw.githubusercontent.com/RightNow-AI/openfang/main/public/assets/openfang-logo.png" height="64" alt="OpenFang" /></span></a></p>
+<p><a href="https://github.com/RightNow-AI/openfang"><img src="https://img.shields.io/badge/🐍_OpenFang-Rust-orange?style=flat-square" height="22" alt="OpenFang" /></a></p>
+<p><sub>The Agent Operating System</sub></p>
+<p><a href="https://github.com/RightNow-AI/openfang"><img src="https://img.shields.io/github/stars/RightNow-AI/openfang?style=social" /></a></p>
+<p><sub>137K LOC · Knowledge Graph</sub></p>
 </td>
 </tr>
 </table>
@@ -255,9 +243,9 @@ Six logical sub-stores — KV, semantic search, knowledge graph, cross-channel s
 
 ```mermaid
 graph LR
-    A["🎯 Simple\n\nnanobot\n2 Markdown files\nLLM-as-curator"] ---|increasing complexity| B["🔌 Modular\n\nopenclaw\nPlugin architecture\nGraceful fallback"]
-    B ---|increasing complexity| C["🐍 Unified\n\nopenfang\n6 sub-stores\nKnowledge graph"]
-    C ---|increasing complexity| D["🏭 Enterprise\n\nnullclaw\n10 backends\n9-stage pipeline"]
+    A["`🎯 Simple<br/><br/>🐈 nanobot<br/>2 Markdown files<br/>LLM-as-curator`"] ---|increasing complexity| B["`🔌 Modular<br/><br/>🦞 OpenClaw<br/>Plugin architecture<br/>Graceful fallback`"]
+    B ---|increasing complexity| C["`🐍 Unified<br/><br/>🐍 OpenFang<br/>6 sub-stores<br/>Knowledge graph`"]
+    C ---|increasing complexity| D["`🏭 Enterprise<br/><br/>⚡ NullClaw<br/>10 backends<br/>9-stage pipeline`"]
 ```
 
 ## Quick Start
