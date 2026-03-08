@@ -45,14 +45,14 @@ Deep source-level analysis was performed on these 4 open-source AI agent bot pro
 <p><sub>~4,000 Lines · Minimalist</sub></p>
 </td>
 <td align="center" valign="top" width="25%">
-<p><a href="https://github.com/nullclaw/nullclaw"><span style="display:inline-block;background:#f5f5f5;padding:12px;border-radius:12px;"><img src="https://raw.githubusercontent.com/nullclaw/nullclaw/main/nullclaw.png" height="64" alt="NullClaw" /></span></a></p>
+<p><a href="https://github.com/nullclaw/nullclaw"><img src="https://raw.githubusercontent.com/nullclaw/nullclaw/main/nullclaw.png" height="64" alt="NullClaw" /></a></p>
 <p><a href="https://github.com/nullclaw/nullclaw"><img src="https://img.shields.io/badge/⚡_NullClaw-Zig-F7A41D?style=flat-square" height="22" alt="NullClaw" /></a></p>
 <p><sub>678KB · &lt;2ms Startup</sub></p>
 <p><a href="https://github.com/nullclaw/nullclaw"><img src="https://img.shields.io/github/stars/nullclaw/nullclaw?style=social" /></a></p>
 <p><sub>3,230+ Tests · 10 Storage Backends</sub></p>
 </td>
 <td align="center" valign="top" width="25%">
-<p><a href="https://github.com/RightNow-AI/openfang"><span style="display:inline-block;background:#1a1a2e;padding:12px;border-radius:12px;"><img src="https://raw.githubusercontent.com/RightNow-AI/openfang/main/public/assets/openfang-logo.png" height="64" alt="OpenFang" /></span></a></p>
+<p><a href="https://github.com/RightNow-AI/openfang"><img src="https://raw.githubusercontent.com/RightNow-AI/openfang/main/public/assets/openfang-logo.png" height="64" alt="OpenFang" /></a></p>
 <p><a href="https://github.com/RightNow-AI/openfang"><img src="https://img.shields.io/badge/🐍_OpenFang-Rust-orange?style=flat-square" height="22" alt="OpenFang" /></a></p>
 <p><sub>The Agent Operating System</sub></p>
 <p><a href="https://github.com/RightNow-AI/openfang"><img src="https://img.shields.io/github/stars/RightNow-AI/openfang?style=social" /></a></p>
