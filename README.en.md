@@ -309,5 +309,4 @@ MIT — Use this knowledge freely. Build something amazing.
 
 <p align="center">
   <i>If this helped you understand how AI agents remember, consider giving it a ⭐</i><br/><br/>
-  <b>Built by humans who read a lot of source code so you don't have to.</b>
 </p>
