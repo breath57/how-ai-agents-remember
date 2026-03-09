@@ -15,6 +15,9 @@
 | [07-plugin-system.md](07-plugin-system.md) | 插件体系：memory-core + memory-lancedb |
 | [08-config-reference.md](08-config-reference.md) | 完整配置参考 |
 | [09-replication-guide.md](09-replication-guide.md) | 复刻实施方案（适配本项目） |
+| [10-context-engine.md](10-context-engine.md) | **[NEW]** ContextEngine 插件接口（v2026.3.7） |
+| [11-pr-22201-context-engine.md](11-pr-22201-context-engine.md) | **[NEW]** PR #22201 逐层解读：44 文件改动详解 |
+| [12-context-engine-design.md](12-context-engine-design.md) | **[NEW]** ContextEngine 设计思想：模式与原则 |
 
 ## 核心设计哲学
 
