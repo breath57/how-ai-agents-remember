@@ -1,21 +1,21 @@
 <p align="center">
   <img src="https://img.shields.io/badge/AI_Agent-记忆系统-blueviolet?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/逆向工程-4_大_Bot_项目-ff6b6b?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/文档-30%2B_篇-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/逆向工程-5_大_Bot_项目-ff6b6b?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/文档-45%2B_篇-success?style=for-the-badge" />
   <img src="https://img.shields.io/badge/架构图-Mermaid-blue?style=for-the-badge&logo=mermaid" />
 </p>
 
 <h1 align="center">🧠 AI Agent 是怎么"记住"事情的</h1>
 
 <p align="center">
-  <b>逆向工程 4 个火爆的、基于 AI Agent 的开源 Bot 项目，源码级拆解记忆系统的每一个细节。</b><br/>
-  从 2 个 Markdown 文件到 10 种存储后端、9 阶段检索管线、知识图谱 —— 一次看透。
+  <b>逆向工程 5 个火爆的、基于 AI Agent 的开源 Bot 项目，源码级拆解记忆系统的每一个细节。</b><br/>
+  从 2 个 Markdown 文件到 10 种存储后端、9 阶段检索管线、知识图谱、Provider 插件与技能记忆 —— 一次看透。
 </p>
 
 <p align="center">
   <a href="#涉及的开源项目">涉及项目</a> •
   <a href="#这是什么">这是什么</a> •
-  <a href="#四大记忆系统">四大系统</a> •
+  <a href="#五大记忆系统">五大系统</a> •
   <a href="#横向对比">横向对比</a> •
   <a href="#从哪里开始读">从哪开始</a> •
   <a href="#逆向过程中学到了什么">逆向过程中学到了什么</a> •
@@ -26,32 +26,39 @@
 
 ## 涉及的开源项目
 
-本文档深度分析了以下 4 个基于 AI Agent 的开源 Bot 项目的记忆系统实现：
+本文档深度分析了以下 5 个基于 AI Agent 的开源 Bot 项目的记忆系统实现：
 
 <table>
 <tr>
-<td align="center" valign="top" width="25%">
+<td align="center" valign="top" width="20%">
 <p><a href="https://github.com/openclaw/openclaw"><img src="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/openclaw-logo-text-dark.png" height="64" alt="OpenClaw" /></a></p>
 <p><a href="https://github.com/openclaw/openclaw"><img src="https://img.shields.io/badge/🦞_OpenClaw-TypeScript-3178C6?style=flat-square" height="22" alt="OpenClaw" /></a></p>
 <p><sub>Personal AI Assistant</sub></p>
 <p><a href="https://github.com/openclaw/openclaw"><img src="https://img.shields.io/github/stars/openclaw/openclaw?style=social" /></a></p>
 <p><sub>22+ 渠道 · 插件架构</sub></p>
 </td>
-<td align="center" valign="top" width="25%">
+<td align="center" valign="top" width="20%">
+<p><a href="https://github.com/NousResearch/hermes-agent"><img src="https://raw.githubusercontent.com/NousResearch/hermes-agent/main/apps/desktop/public/hermes.png" height="64" alt="Hermes Agent" /></a></p>
+<p><a href="https://github.com/NousResearch/hermes-agent"><img src="https://img.shields.io/badge/🪽_Hermes_Agent-Python-3776AB?style=flat-square" height="22" alt="Hermes Agent" /></a></p>
+<p><sub>Self-Improving AI Agent</sub></p>
+<p><a href="https://github.com/NousResearch/hermes-agent"><img src="https://img.shields.io/github/stars/NousResearch/hermes-agent?style=social" /></a></p>
+<p><sub>20+ 平台 · Provider 插件</sub></p>
+</td>
+<td align="center" valign="top" width="20%">
 <p><a href="https://github.com/HKUDS/nanobot"><img src="https://raw.githubusercontent.com/HKUDS/nanobot/main/nanobot_logo.png" height="64" alt="nanobot" /></a></p>
 <p><a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/badge/🐱_nanobot-Python-3776AB?style=flat-square" height="22" alt="nanobot" /></a></p>
 <p><sub>Ultra-Lightweight AI Assistant</sub></p>
 <p><a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/github/stars/HKUDS/nanobot?style=social" /></a></p>
 <p><sub>~4,000 行 · 极简主义</sub></p>
 </td>
-<td align="center" valign="top" width="25%">
+<td align="center" valign="top" width="20%">
 <p><a href="https://github.com/nullclaw/nullclaw"><img src="https://raw.githubusercontent.com/nullclaw/nullclaw/main/nullclaw.png" height="64" alt="NullClaw" /></a></p>
 <p><a href="https://github.com/nullclaw/nullclaw"><img src="https://img.shields.io/badge/⚡_NullClaw-Zig-F7A41D?style=flat-square" height="22" alt="NullClaw" /></a></p>
 <p><sub>678KB · &lt;2ms Startup</sub></p>
 <p><a href="https://github.com/nullclaw/nullclaw"><img src="https://img.shields.io/github/stars/nullclaw/nullclaw?style=social" /></a></p>
 <p><sub>3,230+ 测试 · 10 存储后端</sub></p>
 </td>
-<td align="center" valign="top" width="25%">
+<td align="center" valign="top" width="20%">
 <p><a href="https://github.com/RightNow-AI/openfang"><img src="https://raw.githubusercontent.com/RightNow-AI/openfang/main/public/assets/openfang-logo.png" height="64" alt="OpenFang" /></a></p>
 <p><a href="https://github.com/RightNow-AI/openfang"><img src="https://img.shields.io/badge/🐍_OpenFang-Rust-orange?style=flat-square" height="22" alt="OpenFang" /></a></p>
 <p><sub>The Agent Operating System</sub></p>
@@ -61,7 +68,7 @@
 </tr>
 </table>
 
-> 这不是又一份"AI Agent 综述"。分析这 4 个项目的每一行记忆相关代码，画出了每一条数据流，记录了每一个设计取舍。
+> 这不是又一份"AI Agent 综述"。分析这 5 个项目的每一行记忆相关代码，画出了每一条数据流，记录了每一个设计取舍。
 
 ---
 
@@ -72,9 +79,10 @@
 爆肝 —— 追踪从"用户发送消息"到"Agent 下周还记得"的每一条代码路径。然后把它全部写了下来。
 
 ```
+├── openclaw/          # 10 篇 — TypeScript，插件体系，混合搜索
+├── hermes-agent/      # 10 篇 — Python，缓存优先，Provider 插件与技能记忆
 ├── nanobot/           # 7 篇  — Python，两层记忆，LLM 驱动整合
 ├── nullclaw/          # 9 篇  — Zig，四层架构，10 种存储后端
-├── openclaw/          # 10 篇 — TypeScript，插件体系，混合搜索
 └── openfang/          # 10 篇 — Rust，统一 SQLite 底座，知识图谱
 ```
 
@@ -92,9 +100,60 @@
 
 ---
 
-## 四大记忆系统
+## 五大记忆系统
 
-### <a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/badge/�_nanobot-PyPI-blue?style=flat-square" height="20" /></a> &nbsp; 极简优雅派
+### <a href="https://github.com/openclaw/openclaw"><img src="https://img.shields.io/badge/🦞_OpenClaw-TypeScript-3178C6?style=flat-square" height="20" /></a> &nbsp; 插件架构师
+
+> **语言：** TypeScript &nbsp;|&nbsp; **渠道：** 22+ &nbsp;|&nbsp; **哲学：** *一切皆插件，一切可降级*
+
+```mermaid
+graph TB
+    Agent["🤖 Agent"] --> Tools["`记忆工具<br/>(remember / recall / search)`"]
+    Tools --> Router["`Search Manager<br/>路由器`"]
+    Router --> QMD["`QMD 外挂引擎<br/>(主力)`"]
+    Router --> |"降级"| SQLite["`内置 SQLite<br/>+ FTS5 + sqlite-vec`"]
+    QMD -.-> |"失败"| SQLite
+    Router --> Embed["`Embedding 路由<br/>6 种提供者`"]
+    Embed --> OpenAI["OpenAI"]
+    Embed --> Gemini["Gemini"]
+    Embed --> Ollama["`Ollama<br/>(本地)`"]
+    Embed --> More["另外 3 种..."]
+    SQLite --> Files["`📁 Markdown 文件<br/>(唯一真相源)`"]
+```
+
+Markdown 文件是唯一真相源 —— 数据库只是索引。双引擎架构优先走 QMD 外挂进程，失败自动降级到内置 SQLite。6 种 Embedding 提供者自动选择、优雅降级。记忆是插件，不是铁板一块。
+
+**核心洞察：** 让 Markdown 文件做规范存储，数据库随时可以从它们重建。
+
+📄 [架构](openclaw/01-architecture-overview.md) · [数据模型](openclaw/02-data-model.md) · [索引构建](openclaw/03-memory-indexing.md) · [搜索管线](openclaw/04-search-pipeline.md) · [Embedding](openclaw/05-embedding-providers.md) · [记忆刷写](openclaw/06-memory-flush.md) · [插件体系](openclaw/07-plugin-system.md) · [配置参考](openclaw/08-config-reference.md) · [复刻指南](openclaw/09-replication-guide.md)
+
+---
+
+### <a href="https://github.com/NousResearch/hermes-agent"><img src="https://img.shields.io/badge/🪽_Hermes_Agent-Python-3776AB?style=flat-square" height="20" /></a> &nbsp; 缓存纪律派
+
+> **语言：** Python &nbsp;|&nbsp; **平台：** 20+ &nbsp;|&nbsp; **测试：** ~25,000 &nbsp;|&nbsp; **哲学：** *Prompt cache 是第一公民*
+
+```mermaid
+graph TB
+    Agent["🤖 AIAgent"] --> Prompt["`冻结 System Prompt<br/>每个 session 构建一次`"]
+    Files["`MEMORY.md / USER.md<br/>小容量事实记忆`"] --> Snapshot["`MemoryStore<br/>冻结快照`"] --> Prompt
+    Agent --> MemTool["`memory tool<br/>add / replace / remove`"] --> Files
+    Agent --> Search["`session_search<br/>discover / scroll / read`"] --> DB["`state.db<br/>SQLite + FTS5`"]
+    Agent --> MM["`MemoryManager<br/>一个外部 Provider`"] --> Provider["Honcho / Mem0 / Hindsight / ..."]
+    Provider --> Fence["`&lt;memory-context&gt;<br/>注入当前 user message copy`"] --> Agent
+    Agent --> CE["`ContextEngine<br/>压缩边界`"] --> Split["`parent_session_id<br/>session split`"] --> DB
+    Agent --> Skills["`Skills<br/>程序性记忆`"]
+```
+
+小容量 `MEMORY.md` / `USER.md` 只保存必须常驻 prompt 的事实；完整历史进入 `state.db`，由 FTS5 的 `session_search` 按需回忆；语义记忆、知识图谱、用户模型交给外部 Memory Provider 插件；复杂流程沉淀为 Skills。外部 recall 不改 system prompt，而是 fenced 后注入当前 user message 的 API copy，最大限度保护 prompt cache。
+
+**核心洞察：** 记忆系统首先是缓存边界设计 —— 什么能常驻 prompt、什么只能按需检索、什么只能 API-call-time 注入，必须分清。
+
+📄 [架构](hermes-agent/01-architecture-overview.md) · [内置记忆](hermes-agent/02-built-in-memory.md) · [Provider 插件](hermes-agent/03-memory-provider-plugins.md) · [会话搜索](hermes-agent/04-session-storage-search.md) · [上下文压缩](hermes-agent/05-context-compression.md) · [运行时流程](hermes-agent/06-runtime-flow.md) · [安全可靠性](hermes-agent/07-security-reliability.md) · [技能记忆](hermes-agent/08-skills-procedural-memory.md) · [复刻指南](hermes-agent/09-replication-guide.md)
+
+---
+
+### <a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/badge/🐱_nanobot-PyPI-blue?style=flat-square" height="20" /></a> &nbsp; 极简优雅派
 
 > **语言：** Python &nbsp;|&nbsp; **代码量：** ~4,000 行 &nbsp;|&nbsp; **哲学：** *Markdown 就是记忆*
 
@@ -166,33 +225,6 @@ graph TB
 
 ---
 
-### <a href="https://github.com/openclaw/openclaw"><img src="https://img.shields.io/badge/🦞_OpenClaw-TypeScript-3178C6?style=flat-square" height="20" /></a> &nbsp; 插件架构师
-
-> **语言：** TypeScript &nbsp;|&nbsp; **渠道：** 22+ &nbsp;|&nbsp; **哲学：** *一切皆插件，一切可降级*
-
-```mermaid
-graph TB
-    Agent["🤖 Agent"] --> Tools["`记忆工具<br/>(remember / recall / search)`"]
-    Tools --> Router["`Search Manager<br/>路由器`"]
-    Router --> QMD["`QMD 外挂引擎<br/>(主力)`"]
-    Router --> |"降级"| SQLite["`内置 SQLite<br/>+ FTS5 + sqlite-vec`"]
-    QMD -.-> |"失败"| SQLite
-    Router --> Embed["`Embedding 路由<br/>6 种提供者`"]
-    Embed --> OpenAI["OpenAI"]
-    Embed --> Gemini["Gemini"]
-    Embed --> Ollama["`Ollama<br/>(本地)`"]
-    Embed --> More["另外 3 种..."]
-    SQLite --> Files["`📁 Markdown 文件<br/>(唯一真相源)`"]
-```
-
-Markdown 文件是唯一真相源 —— 数据库只是索引。双引擎架构优先走 QMD 外挂进程，失败自动降级到内置 SQLite。6 种 Embedding 提供者自动选择、优雅降级。记忆是插件，不是铁板一块。
-
-**核心洞察：** 让 Markdown 文件做规范存储，数据库随时可以从它们重建。
-
-📄 [架构](openclaw/01-architecture-overview.md) · [数据模型](openclaw/02-data-model.md) · [索引构建](openclaw/03-memory-indexing.md) · [搜索管线](openclaw/04-search-pipeline.md) · [Embedding](openclaw/05-embedding-providers.md) · [记忆刷写](openclaw/06-memory-flush.md) · [插件体系](openclaw/07-plugin-system.md) · [配置参考](openclaw/08-config-reference.md) · [复刻指南](openclaw/09-replication-guide.md)
-
----
-
 ### <a href="https://github.com/RightNow-AI/openfang"><img src="https://img.shields.io/badge/🐍_OpenFang-Rust-orange?style=flat-square" height="20" /></a> &nbsp; Rust 底座
 
 > **语言：** Rust &nbsp;|&nbsp; **代码量：** 137K LOC &nbsp;|&nbsp; **测试：** 1,767+ &nbsp;|&nbsp; **哲学：** *一个数据库统治一切*
@@ -225,25 +257,26 @@ graph TB
 
 ## 横向对比
 
-| | <a href="https://github.com/HKUDS/nanobot">🐱 nanobot</a> | <a href="https://github.com/nullclaw/nullclaw">⚡ NullClaw</a> | <a href="https://github.com/openclaw/openclaw">🦞 OpenClaw</a> | <a href="https://github.com/RightNow-AI/openfang">🐍 OpenFang</a> |
-|---|---|---|---|---|
-| **语言** | Python | Zig | TypeScript | Rust |
-| **存储方式** | Markdown 文件 | 10 种后端 | SQLite + LanceDB + MD | 单一 SQLite |
-| **向量搜索** | ❌ 仅 grep | ✅ 多提供者 + 熔断 | ✅ 6 种提供者 + 降级 | ✅ 余弦 (BLOB) |
-| **知识图谱** | ❌ | ❌ | ❌ | ✅ 三元组存储 |
-| **记忆衰减** | ❌ | ✅ 时间衰减 | ❌ | ✅ 置信度衰减 |
-| **LLM 整合** | ✅ 核心特性 | ✅ 摘要器 | ✅ 刷写机制 | ✅ 整合引擎 |
-| **跨通道** | workspace 共享 | session 隔离 | workspace 共享 | ✅ CanonicalSession |
-| **复杂度** | ⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ |
-| **适合场景** | 快速原型 | 企业级 | 插件生态 | 嵌入式 |
+| | <a href="https://github.com/openclaw/openclaw">🦞 OpenClaw</a> | <a href="https://github.com/NousResearch/hermes-agent">🪽 Hermes Agent</a> | <a href="https://github.com/HKUDS/nanobot">🐱 nanobot</a> | <a href="https://github.com/nullclaw/nullclaw">⚡ NullClaw</a> | <a href="https://github.com/RightNow-AI/openfang">🐍 OpenFang</a> |
+|---|---|---|---|---|---|
+| **语言** | TypeScript | Python | Python | Zig | Rust |
+| **存储方式** | SQLite + LanceDB + MD | MD + SQLite + Provider + Skills | Markdown 文件 | 10 种后端 | 单一 SQLite |
+| **向量搜索** | ✅ 6 种提供者 + 降级 | ✅ 外部 Provider | ❌ 仅 grep | ✅ 多提供者 + 熔断 | ✅ 余弦 (BLOB) |
+| **知识图谱** | ❌ | ✅ 可选 Provider | ❌ | ❌ | ✅ 三元组存储 |
+| **记忆衰减** | ❌ | ✅ Provider / Curator 自管 | ❌ | ✅ 时间衰减 | ✅ 置信度衰减 |
+| **LLM 整合** | ✅ 刷写机制 | ✅ 压缩 + Skills + Provider | ✅ 核心特性 | ✅ 摘要器 | ✅ 整合引擎 |
+| **跨通道** | workspace 共享 | ✅ Gateway user/chat scoping | workspace 共享 | session 隔离 | ✅ CanonicalSession |
+| **复杂度** | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| **适合场景** | 插件生态 | 生产级个人 Agent | 快速原型 | 企业级 | 嵌入式 |
 
 ### 复杂度光谱
 
 ```mermaid
 graph LR
     A["`🎯 极简<br/><br/>🐈 nanobot<br/>2 个 Markdown 文件<br/>LLM 自己管记忆`"] ---|复杂度递增| B["`🔌 模块化<br/><br/>🦞 OpenClaw<br/>插件架构<br/>优雅降级`"]
-    B ---|复杂度递增| C["`🐍 统一底座<br/><br/>🐍 OpenFang<br/>6 个子存储<br/>知识图谱`"]
-    C ---|复杂度递增| D["`🏭 企业级<br/><br/>⚡ NullClaw<br/>10 种后端<br/>9 阶段管线`"]
+    B ---|复杂度递增| C["`🪽 缓存优先<br/><br/>Hermes Agent<br/>五条记忆平面<br/>Provider + Skills`"]
+    C ---|复杂度递增| D["`🐍 统一底座<br/><br/>🐍 OpenFang<br/>6 个子存储<br/>知识图谱`"]
+    D ---|复杂度递增| E["`🏭 企业级<br/><br/>⚡ NullClaw<br/>10 种后端<br/>9 阶段管线`"]
 ```
 
 ---
@@ -255,6 +288,7 @@ graph LR
 | 一个周末搭出记忆系统 | [nanobot/架构](nanobot/architecture.md) |
 | 理解向量检索怎么做 | [NullClaw/检索管线](nullclaw/04-retrieval-pipeline.md) |
 | 设计插件化的记忆系统 | [OpenClaw/插件体系](openclaw/07-plugin-system.md) |
+| 理解 prompt cache 约束下的混合记忆 | [Hermes Agent/架构](hermes-agent/01-architecture-overview.md) |
 | 构建知识图谱 | [OpenFang/存储层](openfang/03-storage-layers.md) |
 | 对比所有方案 | [本页 ↑](#横向对比) |
 | 在 LangGraph / Python 里复刻 | 任意 `replication-guide.md` |
@@ -263,7 +297,7 @@ graph LR
 
 ## 逆向过程中学到了什么
 
- 4 种语言、数千行 Agent 记忆代码后，这是提炼的 5 条通用规律：
+ 5 个系统、4 种语言、数千行 Agent 记忆代码后，这是提炼的 6 条通用规律：
 
 ### 1. 每个系统都有两个时钟
 
@@ -271,7 +305,7 @@ graph LR
 
 ### 2. "LLM 自己管记忆"是最优解
 
-4 个系统全都用 LLM 自身来决定什么值得记住。基于规则的提取扛不住复杂场景。
+5 个系统全都把 LLM 放进记忆维护链路里，让模型参与判断什么值得保留。基于规则的提取扛不住复杂场景。
 
 ### 3. 检索比存储难 10 倍
 
@@ -285,6 +319,10 @@ Embedding 会挂。数据库会坏。每个生产系统都需要一条兜底路�
 
 没有衰减，旧的无关记忆会挤掉新的重要记忆。OpenFang 基于置信度的衰减是见过最精巧的方案之一。
 
+### 6. 程序性记忆不应该塞进事实记忆
+
+复杂流程、排错套路、脚本和模板，放进 `MEMORY.md` 会迅速污染 prompt。Hermes 的 Skills 证明了另一条路：事实常驻，流程按需加载。
+
 ---
 
 ## 致谢
@@ -292,6 +330,7 @@ Embedding 会挂。数据库会坏。每个生产系统都需要一条兜底路�
 感谢以下开源项目和社区，它们的优秀工程实践是本文档的分析基础：
 
 - [🦞 **OpenClaw**](https://github.com/openclaw/openclaw) — 功能最全面的个人 AI 助手，22+ 渠道支持 · [官网](https://openclaw.ai) · [文档](https://docs.openclaw.ai)
+- [🪽 **Hermes Agent**](https://github.com/NousResearch/hermes-agent) — Nous Research 的自我改进 AI Agent，Provider 插件与技能记忆 · [官网](https://hermes-agent.nousresearch.com)
 - [🐱 **nanobot**](https://github.com/HKUDS/nanobot) — 受 OpenClaw 启发的极简 AI 助手，~4,000 行代码 · [PyPI](https://pypi.org/project/nanobot-ai/)
 - [⚡ **NullClaw**](https://github.com/nullclaw/nullclaw) — 678KB Zig 静态二进制，<2ms 冷启动 · [官网](https://nullclaw.io) · [文档](https://nullclaw.github.io)
 - [🐍 **OpenFang**](https://github.com/RightNow-AI/openfang) — Rust Agent OS，137K LOC · [官网](https://openfang.sh) · [文档](https://openfang.sh/docs)

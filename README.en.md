@@ -1,21 +1,21 @@
 <p align="center">
   <img src="https://img.shields.io/badge/AI_Agent-Memory_Systems-blueviolet?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/Reverse_Engineered-4_Bot_Projects-ff6b6b?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Docs-30%2B_Files-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Reverse_Engineered-5_Bot_Projects-ff6b6b?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Docs-45%2B_Files-success?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Diagrams-Mermaid-blue?style=for-the-badge&logo=mermaid" />
 </p>
 
 <h1 align="center">🧠 How AI Agents Remember</h1>
 
 <p align="center">
-  <b>Reverse-engineered 4 open-source AI agent bot projects so you don't have to.</b><br/>
-  Deep technical breakdowns of how nanobot, NullClaw, OpenClaw, and OpenFang implement persistent memory — architecture diagrams, data models, source-level analysis, and replication guides.
+  <b>Reverse-engineered 5 open-source AI agent bot projects so you don't have to.</b><br/>
+  Deep technical breakdowns of how OpenClaw, Hermes Agent, nanobot, NullClaw, and OpenFang implement persistent memory — architecture diagrams, data models, source-level analysis, and replication guides.
 </p>
 
 <p align="center">
   <a href="#featured-projects">Projects</a> •
   <a href="#why-this-exists">Why</a> •
-  <a href="#the-4-systems">The 4 Systems</a> •
+  <a href="#the-5-systems">The 5 Systems</a> •
   <a href="#comparison">Comparison</a> •
   <a href="#quick-start">Quick Start</a> •
   <a href="#contributing">Contributing</a> •
@@ -26,32 +26,39 @@
 
 ## Featured Projects
 
-Deep source-level analysis was performed on these 4 open-source AI agent bot projects:
+Deep source-level analysis was performed on these 5 open-source AI agent bot projects:
 
 <table>
 <tr>
-<td align="center" valign="top" width="25%">
+<td align="center" valign="top" width="20%">
 <p><a href="https://github.com/openclaw/openclaw"><img src="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/openclaw-logo-text-dark.png" height="64" alt="OpenClaw" /></a></p>
 <p><a href="https://github.com/openclaw/openclaw"><img src="https://img.shields.io/badge/🦞_OpenClaw-TypeScript-3178C6?style=flat-square" height="22" alt="OpenClaw" /></a></p>
 <p><sub>Personal AI Assistant</sub></p>
 <p><a href="https://github.com/openclaw/openclaw"><img src="https://img.shields.io/github/stars/openclaw/openclaw?style=social" /></a></p>
 <p><sub>22+ Channels · Plugin Architecture</sub></p>
 </td>
-<td align="center" valign="top" width="25%">
+<td align="center" valign="top" width="20%">
+<p><a href="https://github.com/NousResearch/hermes-agent"><img src="https://raw.githubusercontent.com/NousResearch/hermes-agent/main/apps/desktop/public/hermes.png" height="64" alt="Hermes Agent" /></a></p>
+<p><a href="https://github.com/NousResearch/hermes-agent"><img src="https://img.shields.io/badge/🪽_Hermes_Agent-Python-3776AB?style=flat-square" height="22" alt="Hermes Agent" /></a></p>
+<p><sub>Self-Improving AI Agent</sub></p>
+<p><a href="https://github.com/NousResearch/hermes-agent"><img src="https://img.shields.io/github/stars/NousResearch/hermes-agent?style=social" /></a></p>
+<p><sub>20+ Platforms · Provider Plugins</sub></p>
+</td>
+<td align="center" valign="top" width="20%">
 <p><a href="https://github.com/HKUDS/nanobot"><img src="https://raw.githubusercontent.com/HKUDS/nanobot/main/nanobot_logo.png" height="64" alt="nanobot" /></a></p>
 <p><a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/badge/🐱_nanobot-Python-3776AB?style=flat-square" height="22" alt="nanobot" /></a></p>
 <p><sub>Ultra-Lightweight AI Assistant</sub></p>
 <p><a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/github/stars/HKUDS/nanobot?style=social" /></a></p>
 <p><sub>~4,000 Lines · Minimalist</sub></p>
 </td>
-<td align="center" valign="top" width="25%">
+<td align="center" valign="top" width="20%">
 <p><a href="https://github.com/nullclaw/nullclaw"><img src="https://raw.githubusercontent.com/nullclaw/nullclaw/main/nullclaw.png" height="64" alt="NullClaw" /></a></p>
 <p><a href="https://github.com/nullclaw/nullclaw"><img src="https://img.shields.io/badge/⚡_NullClaw-Zig-F7A41D?style=flat-square" height="22" alt="NullClaw" /></a></p>
 <p><sub>678KB · &lt;2ms Startup</sub></p>
 <p><a href="https://github.com/nullclaw/nullclaw"><img src="https://img.shields.io/github/stars/nullclaw/nullclaw?style=social" /></a></p>
 <p><sub>3,230+ Tests · 10 Storage Backends</sub></p>
 </td>
-<td align="center" valign="top" width="25%">
+<td align="center" valign="top" width="20%">
 <p><a href="https://github.com/RightNow-AI/openfang"><img src="https://raw.githubusercontent.com/RightNow-AI/openfang/main/public/assets/openfang-logo.png" height="64" alt="OpenFang" /></a></p>
 <p><a href="https://github.com/RightNow-AI/openfang"><img src="https://img.shields.io/badge/🐍_OpenFang-Rust-orange?style=flat-square" height="22" alt="OpenFang" /></a></p>
 <p><sub>The Agent Operating System</sub></p>
@@ -61,7 +68,7 @@ Deep source-level analysis was performed on these 4 open-source AI agent bot pro
 </tr>
 </table>
 
-> This is not another "AI Agent survey". Every line of memory-related code in these 4 projects was read, every data flow traced, and every design tradeoff documented.
+> This is not another "AI Agent survey". Every line of memory-related code in these 5 projects was read, every data flow traced, and every design tradeoff documented.
 
 ---
 
@@ -78,9 +85,10 @@ Whether you're building your own agent framework, evaluating existing ones, or j
 ## What You Get
 
 ```
+├── openclaw/          # 10 docs — TypeScript, plugin system, hybrid search
+├── hermes-agent/      # 10 docs — Python, cache-first memory, providers and skills
 ├── nanobot/           # 7 docs  — Python, two-layer memory, LLM-driven consolidation
 ├── nullclaw/          # 9 docs  — Zig, four-layer architecture, 10 storage backends
-├── openclaw/          # 10 docs — TypeScript, plugin system, hybrid search
 └── openfang/          # 10 docs — Rust, unified SQLite substrate, knowledge graph
 ```
 
@@ -94,7 +102,58 @@ Each project analysis includes:
 
 > 📐 All diagrams use **Mermaid** — render natively on GitHub, no images to maintain.
 
-## The 4 Systems
+## The 5 Systems
+
+### <a href="https://github.com/openclaw/openclaw"><img src="https://img.shields.io/badge/🦞_OpenClaw-TypeScript-3178C6?style=flat-square" height="20" /></a> &nbsp; The Plugin Architect
+
+> **Language:** TypeScript &nbsp;|&nbsp; **22+ Channels** &nbsp;|&nbsp; **Philosophy:** *Everything is a plugin, everything degrades gracefully*
+
+```mermaid
+graph TB
+    Agent["🤖 Agent"] --> Tools["`Memory Tools<br/>(remember / recall / search)`"]
+    Tools --> Router["`Search Manager<br/>Router`"]
+    Router --> QMD["`QMD Sidecar<br/>(primary)`"]
+    Router --> |"fallback"| SQLite["`Built-in SQLite<br/>+ FTS5 + sqlite-vec`"]
+    QMD -.-> |"fail"| SQLite
+    Router --> Embed["`Embedding Router<br/>6 providers`"]
+    Embed --> OpenAI["OpenAI"]
+    Embed --> Gemini["Gemini"]
+    Embed --> Ollama["`Ollama<br/>(local)`"]
+    Embed --> More["3 more..."]
+    SQLite --> Files["`📁 Markdown Files<br/>(source of truth)`"]
+```
+
+Markdown files are the source of truth — databases are just indexes. A dual-engine architecture routes through an external QMD sidecar first, then falls back to built-in SQLite. Six embedding providers with automatic selection and graceful degradation. Memory is a plugin, not a monolith.
+
+**Key insight:** Make Markdown files the canonical store. Databases rebuild from them.
+
+📄 [Architecture](openclaw/01-architecture-overview.md) · [Data Model](openclaw/02-data-model.md) · [Indexing](openclaw/03-memory-indexing.md) · [Search Pipeline](openclaw/04-search-pipeline.md) · [Embeddings](openclaw/05-embedding-providers.md) · [Flush](openclaw/06-memory-flush.md) · [Plugins](openclaw/07-plugin-system.md) · [Config](openclaw/08-config-reference.md) · [Replication Guide](openclaw/09-replication-guide.md)
+
+---
+
+### <a href="https://github.com/NousResearch/hermes-agent"><img src="https://img.shields.io/badge/🪽_Hermes_Agent-Python-3776AB?style=flat-square" height="20" /></a> &nbsp; The Cache Disciplined Agent
+
+> **Language:** Python &nbsp;|&nbsp; **20+ Platforms** &nbsp;|&nbsp; **~25,000 Tests** &nbsp;|&nbsp; **Philosophy:** *Prompt cache is sacred*
+
+```mermaid
+graph TB
+    Agent["🤖 AIAgent"] --> Prompt["`Frozen System Prompt<br/>built once per session`"]
+    Files["`MEMORY.md / USER.md<br/>bounded fact memory`"] --> Snapshot["`MemoryStore<br/>frozen snapshot`"] --> Prompt
+    Agent --> MemTool["`memory tool<br/>add / replace / remove`"] --> Files
+    Agent --> Search["`session_search<br/>discover / scroll / read`"] --> DB["`state.db<br/>SQLite + FTS5`"]
+    Agent --> MM["`MemoryManager<br/>one external provider`"] --> Provider["Honcho / Mem0 / Hindsight / ..."]
+    Provider --> Fence["`&lt;memory-context&gt;<br/>current user-message copy`"] --> Agent
+    Agent --> CE["`ContextEngine<br/>compression boundary`"] --> Split["`parent_session_id<br/>session split`"] --> DB
+    Agent --> Skills["`Skills<br/>procedural memory`"]
+```
+
+Tiny `MEMORY.md` / `USER.md` files hold facts that must always be in prompt. Full transcripts go to `state.db` and are recalled on demand through FTS5-backed `session_search`. Semantic memory, knowledge graphs, and user modeling live in one external Memory Provider plugin at a time. Reusable procedures become Skills. External recall never mutates the system prompt; it is fenced and injected into the current user-message API copy to preserve prompt-cache stability.
+
+**Key insight:** Memory architecture is cache-boundary architecture — separate what lives in the prompt, what is searched on demand, and what is injected only for one API call.
+
+📄 [Architecture](hermes-agent/01-architecture-overview.md) · [Built-in Memory](hermes-agent/02-built-in-memory.md) · [Provider Plugins](hermes-agent/03-memory-provider-plugins.md) · [Session Search](hermes-agent/04-session-storage-search.md) · [Context Compression](hermes-agent/05-context-compression.md) · [Runtime Flow](hermes-agent/06-runtime-flow.md) · [Security](hermes-agent/07-security-reliability.md) · [Skills Memory](hermes-agent/08-skills-procedural-memory.md) · [Replication Guide](hermes-agent/09-replication-guide.md)
+
+---
 
 ### <a href="https://github.com/HKUDS/nanobot"><img src="https://img.shields.io/badge/🐱_nanobot-PyPI-blue?style=flat-square" height="20" /></a> &nbsp; The Elegant Minimalist
 
@@ -168,33 +227,6 @@ graph TB
 
 ---
 
-### <a href="https://github.com/openclaw/openclaw"><img src="https://img.shields.io/badge/🦞_OpenClaw-TypeScript-3178C6?style=flat-square" height="20" /></a> &nbsp; The Plugin Architect
-
-> **Language:** TypeScript &nbsp;|&nbsp; **22+ Channels** &nbsp;|&nbsp; **Philosophy:** *Everything is a plugin, everything degrades gracefully*
-
-```mermaid
-graph TB
-    Agent["🤖 Agent"] --> Tools["`Memory Tools<br/>(remember / recall / search)`"]
-    Tools --> Router["`Search Manager<br/>Router`"]
-    Router --> QMD["`QMD Sidecar<br/>(primary)`"]
-    Router --> |"fallback"| SQLite["`Built-in SQLite<br/>+ FTS5 + sqlite-vec`"]
-    QMD -.-> |"fail"| SQLite
-    Router --> Embed["`Embedding Router<br/>6 providers`"]
-    Embed --> OpenAI["OpenAI"]
-    Embed --> Gemini["Gemini"]
-    Embed --> Ollama["`Ollama<br/>(local)`"]
-    Embed --> More["3 more..."]
-    SQLite --> Files["`📁 Markdown Files<br/>(source of truth)`"]
-```
-
-Markdown files are the source of truth — databases are just indexes. A dual-engine architecture routes through an external QMD sidecar first, then falls back to built-in SQLite. Six embedding providers with automatic selection and graceful degradation. Memory is a plugin, not a monolith.
-
-**Key insight:** Make Markdown files the canonical store. Databases rebuild from them.
-
-📄 [Architecture](openclaw/01-architecture-overview.md) · [Data Model](openclaw/02-data-model.md) · [Indexing](openclaw/03-memory-indexing.md) · [Search Pipeline](openclaw/04-search-pipeline.md) · [Embeddings](openclaw/05-embedding-providers.md) · [Flush](openclaw/06-memory-flush.md) · [Plugins](openclaw/07-plugin-system.md) · [Config](openclaw/08-config-reference.md) · [Replication Guide](openclaw/09-replication-guide.md)
-
----
-
 ### <a href="https://github.com/RightNow-AI/openfang"><img src="https://img.shields.io/badge/🐍_OpenFang-Rust-orange?style=flat-square" height="20" /></a> &nbsp; The Rust Substrate
 
 > **Language:** Rust &nbsp;|&nbsp; **137K LOC** &nbsp;|&nbsp; **1,767+ Tests** &nbsp;|&nbsp; **Philosophy:** *One database to rule them all*
@@ -227,25 +259,26 @@ Six logical sub-stores — KV, semantic search, knowledge graph, cross-channel s
 
 ## Comparison
 
-| | <a href="https://github.com/HKUDS/nanobot">🐱 nanobot</a> | <a href="https://github.com/nullclaw/nullclaw">⚡ NullClaw</a> | <a href="https://github.com/openclaw/openclaw">🦞 OpenClaw</a> | <a href="https://github.com/RightNow-AI/openfang">🐍 OpenFang</a> |
-|---|---|---|---|---|
-| **Language** | Python | Zig | TypeScript | Rust |
-| **Storage** | Markdown files | 10 backends (SQLite, PG, Redis...) | SQLite + LanceDB + Markdown | Single SQLite |
-| **Vector Search** | ❌ grep only | ✅ Multi-provider + circuit breaker | ✅ 6 providers + fallback | ✅ Cosine similarity (BLOB) |
-| **Knowledge Graph** | ❌ | ❌ | ❌ | ✅ Triple store |
-| **Memory Decay** | ❌ | ✅ Temporal decay scoring | ❌ | ✅ Confidence decay (7d) |
-| **LLM Consolidation** | ✅ Core feature | ✅ Summarizer | ✅ Flush mechanism | ✅ ConsolidationEngine |
-| **Cross-Channel** | Shared per workspace | Per session | Per workspace | ✅ CanonicalSession |
-| **Complexity** | ⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ |
-| **Best For** | Prototyping, simplicity | Enterprise, scale | Plugin ecosystems | Embedded, Rust stacks |
+| | <a href="https://github.com/openclaw/openclaw">🦞 OpenClaw</a> | <a href="https://github.com/NousResearch/hermes-agent">🪽 Hermes Agent</a> | <a href="https://github.com/HKUDS/nanobot">🐱 nanobot</a> | <a href="https://github.com/nullclaw/nullclaw">⚡ NullClaw</a> | <a href="https://github.com/RightNow-AI/openfang">🐍 OpenFang</a> |
+|---|---|---|---|---|---|
+| **Language** | TypeScript | Python | Python | Zig | Rust |
+| **Storage** | SQLite + LanceDB + Markdown | Markdown + SQLite + Providers + Skills | Markdown files | 10 backends (SQLite, PG, Redis...) | Single SQLite |
+| **Vector Search** | ✅ 6 providers + fallback | ✅ External providers | ❌ grep only | ✅ Multi-provider + circuit breaker | ✅ Cosine similarity (BLOB) |
+| **Knowledge Graph** | ❌ | ✅ Optional providers | ❌ | ❌ | ✅ Triple store |
+| **Memory Decay** | ❌ | ✅ Provider / Curator managed | ❌ | ✅ Temporal decay scoring | ✅ Confidence decay (7d) |
+| **LLM Consolidation** | ✅ Flush mechanism | ✅ Compression + Skills + Providers | ✅ Core feature | ✅ Summarizer | ✅ ConsolidationEngine |
+| **Cross-Channel** | Per workspace | ✅ Gateway user/chat scoping | Shared per workspace | Per session | ✅ CanonicalSession |
+| **Complexity** | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| **Best For** | Plugin ecosystems | Production personal agents | Prototyping, simplicity | Enterprise, scale | Embedded, Rust stacks |
 
 ### The Spectrum
 
 ```mermaid
 graph LR
     A["`🎯 Simple<br/><br/>🐈 nanobot<br/>2 Markdown files<br/>LLM-as-curator`"] ---|increasing complexity| B["`🔌 Modular<br/><br/>🦞 OpenClaw<br/>Plugin architecture<br/>Graceful fallback`"]
-    B ---|increasing complexity| C["`🐍 Unified<br/><br/>🐍 OpenFang<br/>6 sub-stores<br/>Knowledge graph`"]
-    C ---|increasing complexity| D["`🏭 Enterprise<br/><br/>⚡ NullClaw<br/>10 backends<br/>9-stage pipeline`"]
+    B ---|increasing complexity| C["`🪽 Cache-first<br/><br/>Hermes Agent<br/>5 memory planes<br/>Providers + Skills`"]
+    C ---|increasing complexity| D["`🐍 Unified<br/><br/>🐍 OpenFang<br/>6 sub-stores<br/>Knowledge graph`"]
+    D ---|increasing complexity| E["`🏭 Enterprise<br/><br/>⚡ NullClaw<br/>10 backends<br/>9-stage pipeline`"]
 ```
 
 ## Quick Start
@@ -264,17 +297,18 @@ cd agent-memory-anatomy
 | Build memory in a weekend | [nanobot/architecture.md](nanobot/architecture.md) |
 | Understand vector retrieval | [nullclaw/04-retrieval-pipeline.md](nullclaw/04-retrieval-pipeline.md) |
 | Design a plugin-based system | [openclaw/07-plugin-system.md](openclaw/07-plugin-system.md) |
+| Understand cache-safe hybrid memory | [hermes-agent/01-architecture-overview.md](hermes-agent/01-architecture-overview.md) |
 | Build a knowledge graph | [openfang/03-storage-layers.md](openfang/03-storage-layers.md) |
 | Compare all approaches | [This page ↑](#comparison) |
 | Replicate in LangGraph / Python | Any `replication-guide.md` |
 
 ## Lessons from Reverse Engineering
 
-After reading thousands of lines of agent memory code across 4 languages, here are the universal patterns:
+After reading thousands of lines of agent memory code across 5 systems and 4 languages, here are the universal patterns:
 
 1. **Every system has two clocks** — Short-term (session/conversation) and long-term (persisted facts). The difference is how they bridge the two.
 
-2. **LLM-as-curator is the winning pattern** — All 4 systems use the LLM itself to decide what's worth remembering. Rule-based extraction doesn't scale.
+2. **LLM-as-curator is the winning pattern** — All 5 systems put the LLM in the memory-maintenance loop so the model helps decide what is worth preserving. Rule-based extraction doesn't scale.
 
 3. **The retrieval problem is harder than the storage problem** — Storing memories is easy. Getting the *right* memory at the *right* time is the real challenge. nullclaw's 9-stage pipeline is evidence of this.
 
@@ -282,11 +316,14 @@ After reading thousands of lines of agent memory code across 4 languages, here a
 
 5. **Memory decay matters more than you think** — Without decay, old irrelevant memories crowd out new important ones. openfang's confidence-based decay is the most sophisticated approach found.
 
+6. **Procedural memory should not live in fact memory** — Complex workflows, scripts, and templates quickly pollute `MEMORY.md`. Hermes Agent's Skills show a better split: facts stay resident, procedures load on demand.
+
 ## Acknowledgments
 
 Thanks to these open-source projects and communities whose excellent engineering made this analysis possible:
 
 - [🦞 **OpenClaw**](https://github.com/openclaw/openclaw) — The most feature-complete personal AI assistant, 22+ channels · [Website](https://openclaw.ai) · [Docs](https://docs.openclaw.ai)
+- [🪽 **Hermes Agent**](https://github.com/NousResearch/hermes-agent) — Nous Research's self-improving AI agent, provider plugins and procedural skills · [Website](https://hermes-agent.nousresearch.com)
 - [🐱 **nanobot**](https://github.com/HKUDS/nanobot) — OpenClaw-inspired minimalist AI assistant, ~4,000 lines · [PyPI](https://pypi.org/project/nanobot-ai/)
 - [⚡ **NullClaw**](https://github.com/nullclaw/nullclaw) — 678KB Zig static binary, <2ms cold start · [Website](https://nullclaw.io) · [Docs](https://nullclaw.github.io)
 - [🐍 **OpenFang**](https://github.com/RightNow-AI/openfang) — Rust Agent OS, 137K LOC · [Website](https://openfang.sh) · [Docs](https://openfang.sh/docs)
